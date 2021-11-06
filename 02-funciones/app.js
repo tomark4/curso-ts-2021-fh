@@ -35,4 +35,15 @@
         return name + " " + rest.join(" ");
     };
     console.log(superFullName('Jose', 'Quintero', 'Fernandez'));
+    // tipo function
+    var sumar = function (a, b) { return a + b; };
+    var greet = function (name) { return "Hello, " + name; };
+    var helloWorld = function () { return "Hello world"; };
+    var myFunction;
+    // myFunction = sumar;
+    // console.log(myFunction(1,2));
+    // myFunction = greet;
+    // console.log(myFunction("Jose"));
+    myFunction = helloWorld;
+    console.log(myFunction());
 })();

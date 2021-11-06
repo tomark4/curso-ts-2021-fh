@@ -46,5 +46,19 @@
         return `${name} ${rest.join(" ") }`;
     }
 
-    console.log(superFullName('Jose','Quintero','Fernandez'))
+    console.log(superFullName('Jose','Quintero','Fernandez'));
+
+    // tipo function
+    const sumar = (a:number, b:number):number  => a + b;
+    const greet = (name: string):string => `Hello, ${name}`;
+    const helloWorld = ():string => `Hello world`
+
+    let myFunction: () => string;
+
+    // myFunction = sumar;
+    // console.log(myFunction(1,2));
+    // myFunction = greet;
+    // console.log(myFunction("Jose"));
+    myFunction = helloWorld;
+    console.log(myFunction());
 }) ()
