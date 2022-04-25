@@ -75,7 +75,8 @@
 
     }
 
-    const auto = new Chevy('Toyota',"4runner")
+    const auto = new Chevy('Toyota',"4runner");
+    
     console.log(auto);
 
     class World {
