@@ -1,4 +1,4 @@
-interface PowerI {
+export interface PowerI {
     id: number;
     desc:string;
 }
