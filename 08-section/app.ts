@@ -77,4 +77,21 @@
 
     const auto = new Chevy('Toyota',"4runner")
     console.log(auto);
+
+    class World {
+        static _instance: World;
+
+        private constructor(public name:string){}
+
+        static callWorld():World {
+            
+            if(!World._instance){
+                World._instance = new World("Mars")
+            } 
+
+            return World._instance;
+        }
+    }
+
+    const planet = World.callWorld();
 })()
