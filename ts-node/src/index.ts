@@ -32,8 +32,10 @@ console.log(genericFunctionArrow("hola").toUpperCase());
     }
 })()
 
-const charmander = new Pokemon("charmander");
-console.log(charmander);
+const pokemon = new Pokemon("charmander");
+// (Pokemon.prototype as any).customName = 'pikachu';
+pokemon.savePokeToDb(0);
+console.log(pokemon);
 
 
 
